@@ -17,3 +17,8 @@ services:
       - my-wpdb:mysql
     environment:
       WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant
+  my-adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8082:8080"
